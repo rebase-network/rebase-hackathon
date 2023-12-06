@@ -3,20 +3,20 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
+import Nav2 from './Nav2';
 import Banner3 from './Banner3';
-import Content5 from './Content5';
-import Teams2 from './Teams2';
 import Content9 from './Content9';
-import Contact0 from './Contact0';
-import Footer0 from './Footer0';
+import Content10 from './Content10';
+import Content12 from './Content12';
+import Footer2 from './Footer2';
 
 import {
-  Banner31DataSource,
-  Content50DataSource,
-  Teams20DataSource,
+  Nav20DataSource,
+  Banner30DataSource,
   Content90DataSource,
-  Contact00DataSource,
-  Footer00DataSource,
+  Content100DataSource,
+  Content120DataSource,
+  Footer20DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -56,22 +56,16 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
+      <Nav2
+        id="Nav2_0"
+        key="Nav2_0"
+        dataSource={Nav20DataSource}
+        isMobile={this.state.isMobile}
+      />,
       <Banner3
-        id="Banner3_1"
-        key="Banner3_1"
-        dataSource={Banner31DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content5
-        id="Content5_0"
-        key="Content5_0"
-        dataSource={Content50DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Teams2
-        id="Teams2_0"
-        key="Teams2_0"
-        dataSource={Teams20DataSource}
+        id="Banner3_0"
+        key="Banner3_0"
+        dataSource={Banner30DataSource}
         isMobile={this.state.isMobile}
       />,
       <Content9
@@ -80,16 +74,22 @@ export default class Home extends React.Component {
         dataSource={Content90DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Contact0
-        id="Contact0_0"
-        key="Contact0_0"
-        dataSource={Contact00DataSource}
+      <Content10
+        id="Content10_0"
+        key="Content10_0"
+        dataSource={Content100DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Footer0
-        id="Footer0_0"
-        key="Footer0_0"
-        dataSource={Footer00DataSource}
+      <Content12
+        id="Content12_0"
+        key="Content12_0"
+        dataSource={Content120DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer2
+        id="Footer2_0"
+        key="Footer2_0"
+        dataSource={Footer20DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
